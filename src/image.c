@@ -508,7 +508,7 @@ void draw_detections(image im, int num, float thresh, box *boxes, float **probs,
             if(right > im.w-1) right = im.w-1;
             if(top < 0) top = 0;
             if(bot > im.h-1) bot = im.h-1;
-            printf("%s: %.0f%%", names[class_id], prob * 100);
+            //printf("%s: %.0f%%", names[class_id], prob * 100);
 
             printf("%d %d %d %d %d", class_id, left, top, right, bot);
 
