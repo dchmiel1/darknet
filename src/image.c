@@ -510,7 +510,7 @@ void draw_detections(image im, int num, float thresh, box *boxes, float **probs,
             if(bot > im.h-1) bot = im.h-1;
             //printf("%s: %.0f%%", names[class_id], prob * 100);
 
-            printf("%d %d %d %d %d", class_id, left, top, right, bot);
+            printf("%s %d %d %d %d", names[class_id], left, top, right, bot);
 
             printf("\n");
             draw_box_width(im, left, top, right, bot, width, red, green, blue);
